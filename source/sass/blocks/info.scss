@@ -1,0 +1,113 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  //   padding: 0 20px;
+  margin: 0 auto;
+}
+
+.info__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  //   text-align: left;
+  margin: 18px 0 0;
+  letter-spacing: -1px;
+}
+
+.info__options {
+  display: flex;
+  flex-direction: column;
+  //   width: 100%;
+  //   margin-bottom: 0;
+  //   margin-top: 15px;
+}
+
+.info__options__item {
+  display: flex;
+  align-items: center;
+  //   margin-top: -1px;
+}
+
+.info__options__item__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+
+.info__options__item__image {
+  background-color: #68b738;
+}
+
+@media (min-width: 768px) {
+  .info {
+    width: 708px;
+  }
+  .info__title {
+    font-size: 60px;
+    letter-spacing: -1.5px;
+  }
+  .info__options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .info__options__item {
+    flex-direction: column;
+    width: 45.5%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 255px;
+    margin-top: 60px;
+    background-repeat: no-repeat;
+    background-position: 55% 0;
+  }
+  .info__options__item__image {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+  .info__options__item__text {
+    margin-left: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-top: 28px;
+    letter-spacing: 1px;
+    max-width: 88%;
+  }
+  .info__options__item--leaf {
+    background-image: url("../img/1.webp");
+  }
+  .info__options__item--powder {
+    background-image: url("../img/2.webp");
+  }
+  .info__options__item--dining {
+    background-image: url("../img/3.webp");
+  }
+  .info__options__item--clock {
+    background-image: url("../img/4.webp");
+  }
+}
+
+@media (min-width: 1300px) {
+  .info {
+    width: 1220px;
+  }
+  .info__options {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .info__title {
+    margin-top: 75px;
+  }
+  .info__options {
+    margin-top: 11px;
+  }
+  .info__options__item {
+    width: 250px;
+    background-position: 85% 0;
+  }
+}
