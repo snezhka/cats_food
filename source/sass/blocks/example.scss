@@ -140,7 +140,7 @@
   border-radius: 50px;
   background: #fff;
 }
-.compare__range__toogle::after {
+.compare__range__toggle::after {
   content: "";
   position: absolute;
   left: 5px;
@@ -158,6 +158,17 @@
     padding: 17px 0 70px;
     gap: 0;
   }
+
+  .compare__range__toggle:hover {
+    // box-shadow: 0 3px 5px rgb(0 0 0 0.25);
+    border: 1px solid #cdcdcd;
+  }
+
+  .compare__range__toggle:active {
+    // box-shadow: 0 4px 5px rgb(0 0 0 0.3);
+    border: 2px solid #68b738;
+  }
+
   .compare__range__progress {
     height: 6px;
     margin: 0 25px;
@@ -173,7 +184,17 @@
     padding: 5px 0;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.23);
   }
-  .compare__range__toogle {
+
+  .compare__range__button:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .compare__range__button:active {
+    border: 0;
+    padding-bottom: 6px;
+  }
+
+  .compare__range__toggle {
     position: absolute;
     width: 32px;
     height: 32px;
@@ -184,7 +205,8 @@
     transform: translate(200px, -13px);
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
   }
-  .compare__range__toogle::after {
+
+  .compare__range__toggle::after {
     content: "";
     display: block;
     position: absolute;
