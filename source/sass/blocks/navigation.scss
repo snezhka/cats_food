@@ -44,7 +44,7 @@
 
 .nav--opened + .nav-list {
   display: flex;
-  position: absolute;
+  // position: absolute;
   flex-direction: column;
   top: 84px;
   margin: 0 auto;
